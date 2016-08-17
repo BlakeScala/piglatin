@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Pig Latin Translator</title>
+    <title>Pig Latin</title>
   </head>
   <body>
     <div class="container">
-      <h1>Pig Latin Translator</h1>
-      <form>
+        <h1>Pig Latin Converter</h1>
+      <form id="form">
         <div class="form-group">
-          <label for="textinput">Enter words to be translated.</label>
-          <input type="text" id="textinput">
+          <label for="userinput">Enter text for translation</label>
+          <input id="userinput" class="form-control"></input>
         </div>
-        <button type="submit" class="btn btn-primary" name="button">Submit</button>
+        <button class="btn btn-primary" type="submit" name="button">Submit!</button>
       </form>
-      <div id= "output">
-        <p>
-
-        </p>
+      <div class="row">
+        <p id="output"></p>
       </div>
     </div>
   </body>
